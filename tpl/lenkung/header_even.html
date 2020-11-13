@@ -1,7 +1,13 @@
 <table width="100%" class="pdfheader">
     <tr>
-        <td style="text-align: left">Last update: @UPDATE@</td>
-        <td style="text-align: center">@ID@</td>
-        <td style="text-align: right">@PAGEURL@</td>
+        <td style="text-align: center;width:25%;"><img src="@WIKIURL@lib/exe/fetch.php?media=wiki:logo.png" style="height:30px;"></td>
+        <td style="text-align: center;font-weight:bold;font-size:115%;">@DOK-TITLE@</td>
+        <td  style="text-align: center;width:100px;">Revision: @REVISION@</td>
+    </tr>
+    <tr>
+        <td style="text-align: center">@OPTION1@</td>
+        <td style="text-align: center">@OPTION2@</td>
+        <td style="text-align: center">Seite @PAGE@ von @PAGES@</td> <!-- remove / and use setting $mpdf->pagenumSuffix = '/'; to have only / if @PAGES@ is defined -->
+        
     </tr>
 </table>

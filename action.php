@@ -82,6 +82,7 @@ class action_plugin_controlleddocuments extends DokuWiki_Action_Plugin {
     function replacement_before(Doku_Event $event, $param) {
         global $conf;
         global $INFO;
+        global $auth;
         
         $tags = $this->extractTags($INFO['id']);
 
@@ -112,7 +113,7 @@ class action_plugin_controlleddocuments extends DokuWiki_Action_Plugin {
             if (!in_array($key,$k)) $event->data['replace']["@$key@"] = $approve[$key];
         }
 
-        $event->data['replace']['@AUTHOR@'] = $INFO['meta']['contributor'][$INFO['user']];
+        $event->data['replace']['@LASTAUTHOR@'] = $auth->getUserData($INFO['user'])['name'];
 
     }
 
