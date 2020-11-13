@@ -1,0 +1,8 @@
+.plugin_controlledocuments_table {
+    font-size:75%;
+}
+
+.plugin_controlledocuments_table th,
+.plugin_controlledocuments_table td {
+    text-align:center;
+}
