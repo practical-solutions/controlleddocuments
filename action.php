@@ -2,8 +2,8 @@
 /**
  * Controlled Documents
  *
- * @license    MIT
- * @author     Gero Gothe <practical@medizin-lernen.de>
+ * @license    GPL2
+ * @author     Gero Gothe <gero.gothe@medizindoku.de>
  */
 
 

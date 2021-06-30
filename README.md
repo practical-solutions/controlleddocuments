@@ -1,12 +1,8 @@
-The present version is an alpha-version! Testing ist still performed.
-
 # Controlled Documents Plugin (for dw2pdf)
 
 This plugin supports the creation of templates for dw2pdf which are intended to be layouted as controlled documents.
 
 It implements a set of dw2pdf-replacements which can be manually or automatically filled. It also allows the definition of two self-defined replacements via the configuration.
-
-Further details on using this plugin will be added soon. It is incomplete right now.
 
 ## Basic usage
 
@@ -33,7 +29,7 @@ you could define `Author-mark:Someone` which would overweite the author who actu
 
 ### Integrating the approve-plugin
 
-If installed, the data from the approve-plugin can be integrated in any template using the following tags:
+If installed, the data from the approve-plugin can be integrated in any template using the following tags (english):
 ```
 @AUTHOR-MARK@ = User who clicked on "mark ready by approval"
 @DATE-MARK@   = Date at which the document was marked ready for approval
@@ -43,6 +39,13 @@ If installed, the data from the approve-plugin can be integrated in any template
 
 @REVISION@ = Approve Version. Set to "draft" if the version displayed is not approved.
 ```
+
+These replacements are language-specific an can be looked up in the admin section
+
+## Admin Section
+
+* Provides an interface to install additional templates which implement the above replacements.
+* Show the language specific replacements which can be used (english or german)
 
 
 ## Requirements / Compatibility

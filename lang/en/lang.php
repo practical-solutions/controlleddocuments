@@ -10,3 +10,10 @@ $lang["option:version"]         = "VERSION";
 
 $lang["draft"]          = "Draft";
 $lang["unapproved"]     = "Not approved";
+
+$lang["plugin title"]       = "Controlled documents";
+$lang["plugin description"] = "Template system for generating pdf-files with data for controlled documents.";
+$lang["template"]           = "Template";
+$lang["template info"]      = "You can install templates in this section";
+$lang["install fail"]       = "If install fails, check directory permissions";
+$lang["install msg"]        = "was installed";

@@ -10,3 +10,10 @@ $lang["option:version"]         = "VERSION";
 
 $lang["draft"]          = "Entwurf";
 $lang["unapproved"]     = "Nicht freigegeben";
+
+$lang["plugin title"]       = "Gelenkte Dokumente";
+$lang["plugin description"] = "Vorlagensystem für die Generierung von PDFs mit Lenkungsdaten.";
+$lang["template"]           = "Vorlage";
+$lang["template info"]      = "Hier können Sie Vorlagen installieren oder aktualisieren";
+$lang["install fail"]       = "Prüfen Sie die Dateiberechtigungen, wenn die Installation nicht funktionieren sollte.";
+$lang["install msg"]        = "wurde installiert";

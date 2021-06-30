@@ -16,6 +16,18 @@ table.pdffooter td {
     padding:2px;
 }
 
+h1,h2,h3,h4,h5 {margin-bottom:0px;padding:0px;}
+
+h1 {font-size:25px;}
+h2 {font-size:21px;}
+h3 {font-size:18px;}
+h4 {font-size:15px;}
+h5 {font-size:13px;}
+
+p {margin-top:3px;margin-bottom:3px;}
+
+body {font-size:13px;}
+
 /* Table of Content -- see http://mpdf1.com/manual/index.php?tid=243 */
 div.mpdf_toc {
 }

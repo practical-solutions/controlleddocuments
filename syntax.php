@@ -69,7 +69,7 @@ class syntax_plugin_controlleddocuments extends DokuWiki_Syntax_Plugin {
                 }
             }
             
-            if ($this->getConf("showtable")) $renderer->doc .= "<table class='plugin_controlledocuments_table'><tr>$l1</tr><tr>$l2</tr></table>";
+            if ($this->getConf("showtable")) $renderer->doc .= "<div class='infotable'><table class='plugin_controlledocuments_table'><tr>$l1</tr><tr>$l2</tr></table></div>";
             
             return true;
         }
