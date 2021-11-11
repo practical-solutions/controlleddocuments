@@ -2,7 +2,7 @@
 /**
  * Controlled Documents
  *
- * @license    Unlicense
+ * @license    GPL2
  * @author     Gero Gothe <practical@medizin-lernen.de>
  */
 // must be run within Dokuwiki
@@ -19,9 +19,14 @@ class syntax_plugin_controlleddocuments extends DokuWiki_Syntax_Plugin {
 
     private $dw2pdf_inst = false;
 
-    function getType(){return 'substition';}
+    function getType(){return 'formatting';}
+    
+    function getAllowedTypes() { return array('container', 'formatting', 'substition', 'protected', 'disabled', 'paragraphs'); }
 
-    function getSort(){return 59;}
+    function getSort(){return 195;}
+    
+    function getPType(){ return 'stack';}
+    
 
     # Checks if dw2pdf is installed/activated
     function __construct() {
@@ -32,27 +37,19 @@ class syntax_plugin_controlleddocuments extends DokuWiki_Syntax_Plugin {
     }
 
    function connectTo($mode) {
-        $this->Lexer->addEntryPattern('<control>',$mode,'plugin_controlleddocuments');
+        $this->Lexer->addSpecialPattern('<control>\s(?:.*)\s<\/control>',$mode,'plugin_controlleddocuments');
     }
-
-   
-    function postConnect() {      
-        $this->Lexer->addExitPattern('</control>', 'plugin_controlleddocuments');
-    }
-
 
     /* Handle the match */
     function handle($match, $state, $pos, Doku_Handler $handler){
-         if ($state == DOKU_LEXER_UNMATCHED) {
-            return $match;
-        }
-          
-        return false;
+        return $match;
+
     }
 
 
     public function render($format, Doku_Renderer $renderer, $data) {
         
+
         if ($data === false) return;
         
         if($format == 'xhtml') {

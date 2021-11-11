@@ -1,7 +1,7 @@
 base   controlleddocuments
 author Gero Gothe
 email  gero.gothe@medizindoku.de
-date   2021-06-30
+date   2021-11-11
 name   Controlled Documents (for dw2pdf)
 desc   Define own replacements and integrate data from the approve-plugin in dw2pdf-templates
 url    https://github.com/practical-solutions/controlleddocuments
